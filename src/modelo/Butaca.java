@@ -2,7 +2,7 @@ package modelo;
 
 public class Butaca {
     private String id;
-    private boolean estaBloqueada;
+    private TipoEstado estado;
 
     public Butaca(String id, boolean estaBloqueada) {
         this.id = id;
@@ -17,13 +17,14 @@ public class Butaca {
         this.id = id;
     }
 
-    public boolean isEstaBloqueada() {
-        return estaBloqueada;
+    public TipoEstado getEstado() {
+        return estado;
     }
 
-    public void setEstaBloqueada(boolean estaBloqueada) {
-        this.estaBloqueada = estaBloqueada;
+    public void setEstado(TipoEstado estado) {
+        this.estado = estado;
     }
+
 
     @Override
     public String toString() {
